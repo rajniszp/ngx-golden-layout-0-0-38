@@ -1,0 +1,17 @@
+import { ApplicationRef, Injector } from '@angular/core';
+import { RootWindowService } from './root-window.service';
+export declare class MockWindowSynchronizerService {
+    restoreAppRefTick(): void;
+    onUnload(): void;
+}
+export declare class WindowSynchronizerService {
+    private appref;
+    private rootService;
+    private injector;
+    private topWindow;
+    private isChildWindow;
+    private unloaded;
+    constructor(appref: ApplicationRef, rootService: RootWindowService, injector: Injector);
+    restoreAppRefTick(): void;
+    onUnload(): void;
+}

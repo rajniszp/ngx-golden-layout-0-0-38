@@ -1,0 +1,1 @@
+{"version":3,"file":"root-window.service.d.ts","sources":["root-window.service.d.ts"],"names":[],"mappings":";AAAA;AACA;AACA;AACA;;;AACA","sourcesContent":["export declare class RootWindowService {\r\n    constructor();\r\n    isChildWindow(): boolean;\r\n    getRootWindow(): Window & typeof globalThis;\r\n}\r\n"]}

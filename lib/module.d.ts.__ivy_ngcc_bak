@@ -1,0 +1,6 @@
+import { ModuleWithProviders, Type, Provider } from '@angular/core';
+import * as config from './config';
+export declare class GoldenLayoutModule {
+    static forRoot(types: config.ComponentType[], fallback?: Type<any>, pluginDeps?: config.PluginDependencyType[]): ModuleWithProviders<GoldenLayoutModule>;
+    static forChild(types: config.ComponentType[], fallback?: Type<any>): Provider[];
+}

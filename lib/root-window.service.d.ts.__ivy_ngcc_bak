@@ -1,0 +1,5 @@
+export declare class RootWindowService {
+    constructor();
+    isChildWindow(): boolean;
+    getRootWindow(): Window & typeof globalThis;
+}

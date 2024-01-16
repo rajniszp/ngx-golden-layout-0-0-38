@@ -1,0 +1,13 @@
+import { Type } from '@angular/core';
+import { ComponentType } from './config';
+import { PluginRegistryService } from './plugin-registry.service';
+export declare class ComponentRegistryService {
+    private pluginRegistry?;
+    private components;
+    private awaitedComponents;
+    constructor(initialComponents?: ComponentType[], pluginRegistry?: PluginRegistryService);
+    registeredComponents(): ComponentType[];
+    componentMap(): Map<string, Type<any>>;
+    registerComponent(component: ComponentType): void;
+    waitForComponent(component: string): Promise<Type<any>>;
+}

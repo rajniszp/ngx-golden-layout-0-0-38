@@ -1,0 +1,39 @@
+{
+  "name": "ngx-golden-layout",
+  "version": "0.0.38",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Martin Koppehel",
+    "email": "mkoppehel@embedded.enterprises",
+    "url": "https://embedded.enterprises"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.2",
+    "@angular/core": "^11.0.2",
+    "jquery": "3.5.1",
+    "golden-layout": "1.5.9"
+  },
+  "main": "bundles/ngx-golden-layout.umd.js",
+  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-golden-layout.js",
+  "module": "fesm2015/ngx-golden-layout.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-golden-layout.js",
+  "es2015": "fesm2015/ngx-golden-layout.js",
+  "esm2015": "esm2015/ngx-golden-layout.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-golden-layout.js",
+  "fesm2015": "fesm2015/ngx-golden-layout.js",
+  "typings": "ngx-golden-layout.d.ts",
+  "metadata": "ngx-golden-layout.metadata.json",
+  "sideEffects": false,
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "11.2.14",
+    "fesm2015": "11.2.14",
+    "module": "11.2.14",
+    "typings": "11.2.14"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

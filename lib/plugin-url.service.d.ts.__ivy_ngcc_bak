@@ -1,0 +1,20 @@
+import { Observable } from 'rxjs';
+export interface IPluginURL {
+    id: string;
+    url: string;
+}
+/**
+ * This class manages plugin load and unload requests across all windows.
+ * Because we can't have progress reporting about all windows, we also don't
+ * return any progress/success indicator here.
+ */
+export declare class PluginURLProvider {
+    private loadedURLs;
+    private loads;
+    private unloads;
+    loadRequests$(): Observable<IPluginURL>;
+    unloadRequests$(): Observable<string>;
+    allPlugins(): IPluginURL[];
+    requestLoad(id: string, url: string): void;
+    requestUnload(id: string): void;
+}
